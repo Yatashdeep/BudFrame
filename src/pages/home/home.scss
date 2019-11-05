@@ -1,0 +1,38 @@
+page-home {
+    .main {
+        position: relative;
+        background-color: #DD1A32;
+    }
+    .img-inner {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .frame-style
+    {
+        width: 100%; 
+        height: auto;
+    }
+    
+    .toolbar-background {
+        background-color: #DD1A32;
+        
+      }
+
+    .background{
+        background-color:#191921;
+    }
+    .upload-button{
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .image-preview
+    {
+        height:auto;
+        width:100%; 
+    }
+}
+
+

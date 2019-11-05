@@ -1,0 +1,37 @@
+
+<!-- 
+    **************************************************************************
+    HTML for UPLOAD BUTTON  AND SHARE IMAGE  BUTTON TO UPLOAD IMAGE AND  FRAME
+    **************************************************************************
+ -->
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			<p>Bud Frame</p>
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding class="background">
+	<div class="main" id="results"> <img class="image-preview" src="{{FileUriImage}}">
+		<div class="img-inner"> <img src="assets/imgs/imageframe.png" class="frame-style"> </div>
+	</div>
+	<ion-row class="upload-button">
+		<button ion-button (click)=" UploadPhoto()" outline round>Upload Image</button>
+	</ion-row>
+	<ion-fab right bottom color="primary">
+		<button ion-fab color="light">
+			<ion-icon name="md-share"></ion-icon>
+		</button>
+		<ion-fab-list side="left">
+			<button ion-fab (click)="MergeImage(1)">
+				<ion-icon name="logo-facebook"></ion-icon>
+			</button>
+			<button ion-fab (click)="MergeImage(2)">
+				<ion-icon name="logo-whatsapp"></ion-icon>
+			</button>
+			<button ion-fab (click)="MergeImage(3)">
+				<ion-icon name="logo-instagram"></ion-icon>
+			</button>
+		</ion-fab-list>
+	</ion-fab>
+</ion-content>
